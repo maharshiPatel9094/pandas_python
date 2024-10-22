@@ -3,6 +3,8 @@ import pandas as pd
 data = pd.read_csv("./weather_data.csv")
 print(data["temp"])
 
+# data_dict = data.to_dict()
+# print(data_dict)
 
 
 
