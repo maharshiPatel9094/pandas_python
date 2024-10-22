@@ -17,6 +17,7 @@ data_dict = {
 
 data_student = pd.DataFrame(data_dict)
 # print(data_student)
+# creating a new csv file
 data_student.to_csv(r"C:\Users\mahar\OneDrive\Documents\GitHub\pandas_python\day25_learning\new_data.csv")
 
 
