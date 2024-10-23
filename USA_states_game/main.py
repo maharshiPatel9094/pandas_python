@@ -6,12 +6,12 @@ screen = turtle.Screen()
 screen.title("USA states game")
 
 # Load the image
-image = r"C:\Users\mahar\Downloads\day-25-us-states-game-start\blank_states_img.gif"
+image = r"USA_states_game\blank_states_img.gif"
 screen.addshape(image)
 turtle.shape(image)
 
 # Read the states data
-data = pandas.read_csv(r"C:\Users\mahar\Downloads\day-25-us-states-game-start\50_states.csv")
+data = pandas.read_csv(r"USA_states_game\50_states.csv")
 # FIX: Call the to_list() method to get the list of states
 all_states = data.state.to_list()  # Corrected to call the method
 guessed_states = []
@@ -27,7 +27,7 @@ while len(guessed_states) < 50:
         
         # make a csv of all missing states
         new_data = pandas.DataFrame(missing_states, columns=["states_to_learn"])
-        new_data.to_csv(r"C:\Users\mahar\Downloads\day-25-us-states-game-start\missing_states.csv", index=False)
+        new_data.to_csv(r"USA_states_game\missing_data.csv", index=False)
         break
     
     if answer_state in all_states and answer_state not in guessed_states:
