@@ -12,6 +12,8 @@ def new_button_clicked():
 window = tkinter.Tk()
 window.title("Widget Window")
 window.minsize(width=500,height=500)
+window.config(padx=20,pady=20)
+
 
 # labels
 my_label = tkinter.Label(text="I am a old label")
